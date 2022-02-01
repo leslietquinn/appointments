@@ -1,0 +1,6 @@
+tmp/
+cache/
+library/
+logs/
+*.dat
+*.cache

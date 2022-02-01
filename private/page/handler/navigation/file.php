@@ -1,0 +1,19 @@
+<?php
+
+	final class QPage_Handler_Navigation extends QPage_Handler {
+		public function __construct() {
+			$this -> id = 'navigation';
+		}
+		
+		public function execute( QDataspace_Interface $dataspace ) {
+			$page = new QPage_Renderer( $request = QRegistry::get( 'request' ) );
+			
+			$page -> render( 'navigation.tpl' );
+		}
+		
+		public function isCachable() {
+			return QCache::NO_CACHE;
+		}
+	}
+	
+?>
