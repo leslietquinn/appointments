@@ -10,9 +10,7 @@
 		
 		// application level
 		dirname( dirname( __FILE__ ) ).'/shared/', 
-		
-		dirname( dirname( dirname( __FILE__ ) ) ).'/library/',
-		dirname( dirname( dirname( __FILE__ ) ) ).'/library/core/',  
+		dirname( dirname( __FILE__ ) ).'/library/core/',  
 	);
 	
 	$pathname = ini_get( 'include_path' );
