@@ -2,5 +2,7 @@ tmp/
 cache/
 library/
 logs/
+private/configs.php
+configs.php
 *.dat
 *.cache
