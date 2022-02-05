@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="phpunit.xsd"
+        bootstrap="./autoload.php" 
+        backupGlobals="false" 
+        colors="true" 
+        convertErrorsToExceptions="true" 
+        convertNoticesToExceptions="true" 
+        convertWarningsToExceptions="true"
+        forceCoversAnnotation="true"
+        beStrictAboutCoversAnnotation="true"
+        beStrictAboutOutputDuringTests="true"
+        beStrictAboutTodoAnnotatedTests="true"
+        verbose="true"
+        stopOnRisky="true"
+        stopOnError="true"
+        stopOnFailure="true"
+        stopOnWarning="true">
+
+    <testsuites>
+        <testsuite name="Application Tests">
+            <!-- <directory>./</directory> -->
+
+            <file>appointmentsTest.php</file>
+        </testsuite>
+        <testsuite name="Library Tests">
+            <directory>../../../protected/tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage cacheDirectory="./tmp" processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./</directory>
+            <directory suffix=".php">../../../protected/tests</directory>
+        </include>
+    </coverage>
+</phpunit>

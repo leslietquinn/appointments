@@ -5,7 +5,7 @@
     			'srce' 			=> 	'appointments',
     			'host' 			=> 	'localhost',
     			'user' 			=> 	'root',
-    			'pass' 			=> 	'',
+    			'pass' 			=> 	'b5k46jy21utx',
 				'type'			=> 	'mysql', 				
 				
   				),

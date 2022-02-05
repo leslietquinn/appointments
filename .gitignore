@@ -6,3 +6,4 @@ private/configs.php
 configs.php
 *.dat
 *.cache
+.phpunit.result.cache
